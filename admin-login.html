@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Administrator Access | Tolbert Innovation Hub</title>
+  <meta name="description" content="Administrative access for reviewing student submissions and issuing admission letters." />
+  <link rel="stylesheet" href="styles.css" />
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">Tolbert Innovation Hub</a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="entertainment.html">Entertainment</a>
+        <a href="contact.html">Contact</a>
+      <a href="classroom.html">Classroom</a></nav>
+    </div>
+  </header>
+
+  <main id="main-content" class="section">
+    <div class="container portal-wrap">
+      <article class="form-card">
+        <p class="section-label">Administrator Portal</p>
+        <h1 class="page-title">Access Review Applications</h1>
+        <p class="section-intro">Use the back-office dashboard to review student submissions, update statuses, and issue admission letters.</p>
+
+        <form id="admin-login-form" class="form-card inner-form" novalidate>
+          <label>Admin Email
+            <input type="email" name="email" required autocomplete="email" placeholder="admin@tolbertinnovationhub.org" />
+          </label>
+          <label>Password
+            <input type="password" name="password" required autocomplete="current-password" placeholder="Enter password" />
+          </label>
+          <button type="submit" class="btn btn-primary">Access Admin Dashboard</button>
+          <p class="form-feedback" aria-live="polite"></p>
+        </form>
+
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-grid"><p><strong>Email:</strong> <a href="mailto:info@tolbertinnovationhub.org">info@tolbertinnovationhub.org</a></p><p><strong>Phone:</strong> <a href="tel:+231880559227">+231 880 559 227</a></p></div><p class="copyright-note">© 2026 Tolbert Innovation Hub. All rights reserved.</p></footer>
+  <script src="portal-auth.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

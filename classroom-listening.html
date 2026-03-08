@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Listening Module | Classroom</title>
+  <link rel="stylesheet" href="classroom.css"/>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="classroom.html"><img src="https://i.ibb.co/SXJKRq0S/Tolbert-Innovation-Logo.jpg" alt="Tolbert logo"/><span>Tolbert Classroom</span></a>
+    <nav class="nav-links" aria-label="Classroom navigation">
+      <a href="classroom.html">Classroom</a>
+      <a href="classroom-dashboard.html">Dashboard</a>
+      <a href="classroom-resource-center.html">Resource Center</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main-content" class="section">
+  <div class="container skill-layout">
+    <aside class="card skill-sidebar">
+      <h3>Listening Module</h3>
+      <a href="#notes">Lesson Notes</a>
+      <a href="#video">Video Session</a>
+      <a href="#downloads">Downloads</a>
+      <a href="#practice">Practice Test</a>
+      <a href="#quiz">Quick Quiz</a>
+      <a href="#feedback">Was this helpful?</a>
+    </aside>
+
+    <div>
+      <article class="card" id="notes">
+        <h1 class="page-title">Listening: Lesson Notes</h1>
+        <p class="section-lead">Master signpost words, note-taking shortcuts, and distractor recognition for both IELTS and TOEFL listening.</p>
+      </article>
+
+      <article class="card" id="video">
+        <h2>Video Session</h2>
+        <div class="video-wrap">
+          <iframe src="https://www.youtube.com/embed/q8qmJeBxk4Q?si=F2xVQssStl1gMVl5" title="TOEFL Listening Lesson" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <h3 class="u-mt-1">TOEFL Listening (Lectures & Conversations)</h3>
+        <div class="video-wrap">
+          <iframe src="https://www.youtube.com/embed/SXNvRcJtoPA?si=Anmxubebc8Deoc3K" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </article>
+
+      <article class="card" id="downloads">
+        <h2>Downloadable Materials</h2>
+        <ul class="resource-list">
+          <li><a href="materials/toefl-study-planner.pdf" download>TOEFL Listening Weekly Planner</a></li>
+          <li><a href="materials/academic-vocabulary-pack.pdf" download>Academic Listening Vocabulary (PDF)</a></li>
+        </ul>
+      </article>
+
+      <article class="card" id="practice">
+        <h2>Practice Drill + Auto Scoring</h2>
+        <form class="form-stack" data-score-type="listening">
+          <label>1) What is the lecture mainly about?
+            <select data-correct="ecosystem-change" required>
+              <option value="">Select</option>
+              <option value="ecosystem-change">Ecosystem change</option>
+              <option value="space-travel">Space travel</option>
+              <option value="city-history">City history</option>
+            </select>
+          </label>
+          <label>2) Why does the speaker give an example?
+            <select data-correct="support-main-idea" required>
+              <option value="">Select</option>
+              <option value="change-topic">To change topic</option>
+              <option value="support-main-idea">To support the main idea</option>
+              <option value="end-lecture">To end lecture</option>
+            </select>
+          </label>
+          <button class="btn btn-primary" type="submit">Submit Listening Answers</button>
+        </form>
+        <p id="listening-score-feedback" class="form-feedback"></p>
+      </article>
+
+      <article class="card" id="quiz">
+        <h2>Quick Exit Quiz</h2>
+        <p>Which listening habit improved most today?</p>
+        <form class="form-stack">
+          <label><input type="radio" name="lquiz"/> Better note-taking</label>
+          <label><input type="radio" name="lquiz"/> Better focus on transitions</label>
+          <label><input type="radio" name="lquiz"/> Better prediction of answers</label>
+        </form>
+      </article>
+
+      <article class="card" id="feedback">
+        <h2>Was this helpful?</h2>
+        <div class="lesson-toolbar">
+          <button class="btn btn-secondary" type="button">Yes</button>
+          <button class="btn btn-outline-inline" type="button">Needs Improvement</button>
+        </div>
+      </article>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer"><div class="container footer-grid"><div><p><strong>Listening Module</strong></p></div><div><p><a href="classroom-dashboard.html">View Progress Dashboard</a></p></div><div><p><a href="classroom-video-lessons.html">Video Library</a></p></div></div><p class="copyright-note">© 2026 Tolbert Innovation Hub. All rights reserved.</p></footer>
+<script src="classroom.js"></script>
+</body>
+</html>

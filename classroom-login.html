@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Access | Classroom</title>
+  <meta name="description" content="Access the Tolbert Classroom to continue IELTS and TOEFL study progress in this browser session." />
+  <link rel="stylesheet" href="classroom.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="classroom.html"><img src="https://i.ibb.co/SXJKRq0S/Tolbert-Innovation-Logo.jpg" alt="Tolbert logo"/><span>Tolbert Classroom</span></a>
+    <nav class="nav-links" aria-label="Classroom navigation">
+      <a href="classroom.html">Classroom</a>
+      <a href="classroom-dashboard.html">Dashboard</a>
+      <a href="classroom-resource-center.html">Resource Center</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main-content" class="section">
+  <div class="container grid-2">
+    <article class="card">
+      <h1 class="page-title">Student Access</h1>
+      <p class="section-lead">Sign in to save progress, test scores, writing submissions, and speaking recordings.</p>
+      <form id="student-login-form" class="form-stack">
+        <label>Email<input type="email" name="email" required placeholder="student@example.com"/></label>
+        <label>Password<input type="password" name="password" required minlength="6" placeholder="Minimum 6 characters"/></label>
+        <button type="submit" class="btn btn-primary">Sign In</button>
+      </form>
+      <p id="login-feedback" class="form-feedback"></p>
+    </article>
+
+    <article class="card">
+      <h2>New Student?</h2>
+      <p>Create a lightweight classroom account (saved locally in this browser) to enable dashboard tracking.</p>
+      <form id="student-register-form" class="form-stack">
+        <label>Full Name<input type="text" name="name" required/></label>
+        <label>Email<input type="email" name="email" required/></label>
+        <label>Password<input type="password" name="password" required minlength="6"/></label>
+        <button type="submit" class="btn btn-secondary">Create Account</button>
+      </form>
+      <p id="register-feedback" class="form-feedback"></p>
+    </article>
+  </div>
+</main>
+
+<footer class="site-footer"><div class="container footer-grid"><div><p><strong>Student Access</strong></p></div><div><p><a href="classroom-dashboard.html">Go to Dashboard</a></p></div><div><p><a href="classroom.html">Back to Classroom</a></p></div></div><p class="copyright-note">© 2026 Tolbert Innovation Hub. All rights reserved.</p></footer>
+<script src="classroom.js"></script>
+</body>
+</html>

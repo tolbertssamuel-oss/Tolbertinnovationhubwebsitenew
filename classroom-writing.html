@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Writing Module | Classroom</title>
+  <link rel="stylesheet" href="classroom.css"/>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="classroom.html"><img src="https://i.ibb.co/SXJKRq0S/Tolbert-Innovation-Logo.jpg" alt="Tolbert logo"/><span>Tolbert Classroom</span></a>
+    <nav class="nav-links" aria-label="Classroom navigation">
+      <a href="classroom.html">Classroom</a>
+      <a href="classroom-dashboard.html">Dashboard</a>
+      <a href="classroom-resource-center.html">Resource Center</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main-content" class="section">
+  <div class="container skill-layout">
+    <aside class="card skill-sidebar">
+      <h3>Writing Module</h3>
+      <a href="#notes">Lesson Notes</a>
+      <a href="#video">Video Session</a>
+      <a href="#downloads">Downloads</a>
+      <a href="#practice">Writing Submission</a>
+      <a href="#quiz">Quick Quiz</a>
+      <a href="#feedback">Was this helpful?</a>
+    </aside>
+
+    <div>
+      <article class="card" id="notes">
+        <h1 class="page-title">Writing: Lesson Notes</h1>
+        <p class="section-lead">Use clear structure (intro-body-conclusion), relevant examples, and grammar accuracy under time pressure.</p>
+      </article>
+
+      <article class="card" id="video">
+        <h2>Video Session</h2>
+        <div class="video-wrap">
+          <iframe src="https://www.youtube.com/embed/corABi_WgYY" title="TOEFL Writing Lesson" allowfullscreen></iframe>
+        </div>
+      </article>
+
+      <article class="card" id="downloads">
+        <h2>Downloadable Materials</h2>
+        <ul class="resource-list">
+          <li><a href="materials/grammar-essentials-guide.pdf" download>Grammar Essentials Guide (PDF)</a></li>
+          <li><a href="materials/academic-vocabulary-pack.pdf" download>Academic Vocabulary Pack (PDF)</a></li>
+        </ul>
+      </article>
+
+      <article class="card" id="practice">
+        <h2>Writing Submission for Feedback</h2>
+        <form id="writing-feedback-form" class="form-stack">
+          <label>Exam Type
+            <select name="exam" required>
+              <option value="">Select exam</option>
+              <option value="IELTS">IELTS</option>
+              <option value="TOEFL">TOEFL</option>
+            </select>
+          </label>
+          <label>Write your response
+            <textarea name="response" rows="8" required placeholder="Write your answer here..."></textarea>
+          </label>
+          <button class="btn btn-primary" type="submit">Submit for Feedback</button>
+        </form>
+        <p id="writing-feedback-status" class="form-feedback"></p>
+      </article>
+
+      <article class="card" id="quiz">
+        <h2>Quick Exit Quiz</h2>
+        <p>What should you improve next?</p>
+        <form class="form-stack">
+          <label><input type="radio" name="wquiz"/> Task response quality</label>
+          <label><input type="radio" name="wquiz"/> Grammar accuracy</label>
+          <label><input type="radio" name="wquiz"/> Paragraph cohesion</label>
+        </form>
+      </article>
+
+      <article class="card" id="feedback">
+        <h2>Was this helpful?</h2>
+        <div class="lesson-toolbar">
+          <button class="btn btn-secondary" type="button">Yes</button>
+          <button class="btn btn-outline-inline" type="button">Needs Improvement</button>
+        </div>
+      </article>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer"><div class="container footer-grid"><div><p><strong>Writing Module</strong></p></div><div><p><a href="classroom-dashboard.html">View Progress Dashboard</a></p></div><div><p><a href="classroom-study-materials.html">Study Materials</a></p></div></div><p class="copyright-note">© 2026 Tolbert Innovation Hub. All rights reserved.</p></footer>
+<script src="classroom.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Speaking Module | Classroom</title>
+  <link rel="stylesheet" href="classroom.css"/>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="classroom.html"><img src="https://i.ibb.co/SXJKRq0S/Tolbert-Innovation-Logo.jpg" alt="Tolbert logo"/><span>Tolbert Classroom</span></a>
+    <nav class="nav-links" aria-label="Classroom navigation">
+      <a href="index.html">Home</a>
+      <a href="classroom.html">Classroom</a>
+      <a href="classroom-dashboard.html">Dashboard</a>
+      <a href="classroom-resource-center.html">Resource Center</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main-content" class="section">
+  <div class="container skill-layout">
+    <aside class="card skill-sidebar">
+      <h3>Speaking Module</h3>
+      <a href="#notes">Lesson Notes</a>
+      <a href="#video">Video Session</a>
+      <a href="#downloads">Downloads</a>
+      <a href="#practice">Speaking Recording</a>
+      <a href="#quiz">Quick Quiz</a>
+      <a href="#feedback">Was this helpful?</a>
+    </aside>
+
+    <div>
+      <article class="card" id="notes">
+        <h1 class="page-title">Speaking: Lesson Notes</h1>
+        <p class="section-lead">Build confidence with a 3-part response method: idea, example, and clear conclusion.</p>
+      </article>
+
+      <article class="card" id="video">
+        <h2>Video Session</h2>
+        <div class="video-wrap">
+          <iframe src="https://www.youtube.com/embed/enV9ospxayg" title="TOEFL Speaking Lesson" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </article>
+
+      <article class="card" id="downloads">
+        <h2>Downloadable Materials</h2>
+        <ul class="resource-list">
+          <li><a href="materials/toefl-study-planner.pdf" download>Speaking Practice Planner (PDF)</a></li>
+          <li><a href="materials/academic-vocabulary-pack.pdf" download>Useful Speaking Vocabulary (PDF)</a></li>
+        </ul>
+      </article>
+
+      <article class="card" id="practice">
+        <h2>Speaking Practice Recording</h2>
+        <div class="lesson-toolbar">
+          <button class="btn btn-secondary" id="record-start-btn" type="button">Start Recording</button>
+          <button class="btn btn-primary" id="record-stop-btn" type="button">Stop Recording</button>
+        </div>
+        <p id="recording-status" class="form-feedback">Click start to record your speaking response.</p>
+        <audio id="recording-playback" controls class="audio-playback" aria-label="Recording playback"></audio>
+        <p><a id="recording-download" href="#" download="speaking-practice.webm">Download your recording</a></p>
+        <label>Or upload speaking file
+          <input id="speaking-upload-input" type="file" accept="audio/*,video/*"/>
+        </label>
+        <p id="speaking-upload-status" class="form-feedback"></p>
+      </article>
+
+      <article class="card" id="quiz">
+        <h2>Quick Exit Quiz</h2>
+        <p>Which speaking area needs the most practice?</p>
+        <form class="form-stack">
+          <label><input type="radio" name="squiz"/> Fluency</label>
+          <label><input type="radio" name="squiz"/> Pronunciation</label>
+          <label><input type="radio" name="squiz"/> Idea organization</label>
+        </form>
+      </article>
+
+      <article class="card" id="feedback">
+        <h2>Was this helpful?</h2>
+        <div class="lesson-toolbar">
+          <button class="btn btn-secondary" type="button">Yes</button>
+          <button class="btn btn-outline-inline" type="button">Needs Improvement</button>
+        </div>
+      </article>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer"><div class="container footer-grid"><div><p><strong>Speaking Module</strong></p></div><div><p><a href="classroom-dashboard.html">View Progress Dashboard</a></p></div><div><p><a href="classroom-video-lessons.html">Video Library</a></p></div></div><p class="copyright-note">© 2026 Tolbert Innovation Hub. All rights reserved.</p></footer>
+<script src="classroom.js"></script>
+</body>
+</html>

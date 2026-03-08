@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reading Module | Classroom</title>
+  <link rel="stylesheet" href="classroom.css"/>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="classroom.html"><img src="https://i.ibb.co/SXJKRq0S/Tolbert-Innovation-Logo.jpg" alt="Tolbert logo"/><span>Tolbert Classroom</span></a>
+    <nav class="nav-links" aria-label="Classroom navigation">
+      <a href="classroom.html">Classroom</a>
+      <a href="classroom-dashboard.html">Dashboard</a>
+      <a href="classroom-resource-center.html">Resource Center</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main-content" class="section">
+  <div class="container skill-layout">
+    <aside class="card skill-sidebar">
+      <h3>Reading Module</h3>
+      <a href="#notes">Lesson Notes</a>
+      <a href="#video">Video Session</a>
+      <a href="#downloads">Downloads</a>
+      <a href="#practice">Practice Test</a>
+      <a href="#quiz">Quick Quiz</a>
+      <a href="#feedback">Was this helpful?</a>
+    </aside>
+
+    <div>
+      <article class="card" id="notes">
+        <h1 class="page-title">Reading: Lesson Notes</h1>
+        <p class="section-lead">Learn passage mapping, skimming/scanning, and elimination strategy for IELTS and TOEFL reading.</p>
+        <ul class="resource-list">
+          <li>Step 1: Preview headings and question types first.</li>
+          <li>Step 2: Mark keywords and synonyms in questions.</li>
+          <li>Step 3: Track time by passage to avoid rushing.</li>
+        </ul>
+      </article>
+
+      <article class="card" id="video">
+        <h2>Video Session</h2>
+        <div class="video-wrap">
+          <iframe src="https://www.youtube.com/embed/N0ePX99GM70?si=TlXWpGgD7zJ_5aOs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </article>
+
+      <article class="card" id="downloads">
+        <h2>Downloadable Materials</h2>
+        <ul class="resource-list">
+          <li><a href="materials/ielts-study-planner.pdf" download>IELTS Study Planner (PDF)</a></li>
+          <li><a href="materials/toefl-study-planner.pdf" download>TOEFL Study Planner (PDF)</a></li>
+          <li><a href="materials/academic-vocabulary-pack.pdf" download>Academic Vocabulary Pack (PDF)</a></li>
+        </ul>
+      </article>
+
+      <article class="card" id="practice">
+        <h2>Timed Practice + Auto Scoring</h2>
+        <p id="practice-timer-display" class="timer-display" data-duration-minutes="20">20:00</p>
+        <div class="lesson-toolbar">
+          <button class="btn btn-secondary" id="practice-timer-start" type="button">Start</button>
+          <button class="btn btn-secondary" id="practice-timer-pause" type="button">Pause</button>
+          <button class="btn btn-primary" id="practice-timer-reset" type="button">Reset</button>
+        </div>
+        <form class="form-stack" data-score-type="reading" class="u-mt-1">
+          <label>1) Best summary of paragraph 2
+            <select data-correct="urban-adaptation" required>
+              <option value="">Select</option>
+              <option value="rural-farming">Rural farming</option>
+              <option value="urban-adaptation">Urban adaptation</option>
+              <option value="energy-crisis">Energy crisis</option>
+            </select>
+          </label>
+          <label>2) “Resilient” is closest to
+            <select data-correct="able-to-recover" required>
+              <option value="">Select</option>
+              <option value="fragile">Fragile</option>
+              <option value="able-to-recover">Able to recover</option>
+              <option value="silent">Silent</option>
+            </select>
+          </label>
+          <button class="btn btn-primary" type="submit">Submit Reading Answers</button>
+        </form>
+        <p id="reading-score-feedback" class="form-feedback"></p>
+      </article>
+
+      <article class="card" id="quiz">
+        <h2>Quick Exit Quiz</h2>
+        <p>Before moving on: what is your strongest reading strategy today?</p>
+        <form class="form-stack">
+          <label><input type="radio" name="rquiz"/> Skimming</label>
+          <label><input type="radio" name="rquiz"/> Time control</label>
+          <label><input type="radio" name="rquiz"/> Elimination method</label>
+        </form>
+      </article>
+
+      <article class="card" id="feedback">
+        <h2>Was this helpful?</h2>
+        <div class="lesson-toolbar">
+          <button class="btn btn-secondary" type="button">Yes</button>
+          <button class="btn btn-outline-inline" type="button">Needs Improvement</button>
+        </div>
+      </article>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer"><div class="container footer-grid"><div><p><strong>Reading Module</strong></p></div><div><p><a href="classroom-dashboard.html">View Progress Dashboard</a></p></div><div><p><a href="classroom-practice-tests.html">Practice Test Hub</a></p></div></div><p class="copyright-note">© 2026 Tolbert Innovation Hub. All rights reserved.</p></footer>
+<script src="classroom.js"></script>
+</body>
+</html>

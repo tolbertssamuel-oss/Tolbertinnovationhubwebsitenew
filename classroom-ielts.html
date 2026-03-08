@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IELTS Classroom Dashboard | Tolbert Classroom</title>
+  <meta name="description" content="Follow the IELTS learning path dashboard with module progress, completion status, and resume links."/>
+  <link rel="stylesheet" href="classroom.css"/>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="classroom.html"><img src="https://i.ibb.co/SXJKRq0S/Tolbert-Innovation-Logo.jpg" alt="Tolbert logo"/><span>Tolbert Classroom</span></a>
+    <nav class="nav-links" aria-label="Classroom navigation">
+      <a href="classroom.html">Classroom</a>
+      <a href="classroom-dashboard.html">Dashboard</a>
+      <a class="active" href="classroom-ielts.html">IELTS Classroom</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main-content" class="section">
+  <div class="container">
+    <p class="badge">IELTS – British-based exam</p>
+    <h1 class="page-title">IELTS Learning Path Dashboard</h1>
+    <p class="section-lead">Follow Modules 1–6 in order. Complete each module to unlock the next and build exam-ready performance.</p>
+
+    <article class="card u-mb-1">
+      <h2>Course Progress</h2>
+      <div class="progress-wrap">
+        <div class="progress-bar"><div id="ielts-course-progress-fill" class="progress-fill u-w-0"></div></div>
+        <p id="ielts-course-progress-label" class="progress-label">0 of 6 completed (0%)</p>
+      </div>
+      <div class="lesson-toolbar u-mt-075">
+        <a class="btn btn-secondary" id="ielts-resume-link" href="classroom-ielts-module-1.html">Resume Learning</a>
+      </div>
+    </article>
+
+    <article class="card u-mb-1">
+      <h2>Academic vs General Training (Important)</h2>
+      <ul class="resource-list">
+        <li><strong>Reading:</strong> Academic uses longer, research-style texts; General Training uses workplace/everyday materials with simpler text flow.</li>
+        <li><strong>Writing Task 1:</strong> Academic requires data/chart/process summary; General Training requires letter writing for practical situations.</li>
+        <li><strong>Writing Task 2:</strong> Both versions require an essay, but prompt tone and context can differ.</li>
+      </ul>
+    </article>
+
+
+    <article class="card u-mb-1">
+      <h2>Status & Skill Icons</h2>
+      <p class="section-lead">Quick legend for dashboard navigation.</p>
+      <p><span class="status-icon">✅</span> Completed &nbsp; <span class="status-icon">🟡</span> In Progress &nbsp; <span class="status-icon">⚪</span> Not Started &nbsp; <span class="status-icon">🔒</span> Locked &nbsp; <span class="band-icon">🏅</span> Band-critical skill module</p>
+    </article>
+
+    <section class="cards" id="ielts-module-cards">
+      <article class="card module-card" data-ielts-module-card="1">
+        <p class="badge">Module 1</p><h3>Foundation</h3>
+        <p>Learn test format, band scoring logic, grammar accuracy basics, and vocabulary-building routines for daily study consistency.</p>
+        <p class="module-status" data-ielts-status="1"><span class="status-icon" data-ielts-status-icon="1">⚪</span><span class="status-text"> Status: Not Started</span></p>
+        <a class="btn btn-primary" data-ielts-open="1" href="classroom-ielts-module-1.html">Open Module 1</a>
+      </article>
+      <article class="card module-card" data-ielts-module-card="1a">
+        <p class="badge">Module 1a</p><h3>Format Choice: Computer vs Paper</h3>
+        <p>Understand the differences between computer-based and paper-based IELTS to pick the best fit.</p>
+        <p class="module-status" data-ielts-status="1a"><span class="status-icon" data-ielts-status-icon="1a">⚪</span><span class="status-text"> Status: Not Started</span></p>
+        <a class="btn btn-primary" data-ielts-open="1a" href="classroom-ielts-module-computer-vs-paper.html">Open Module 1a</a>
+      </article>
+      <article class="card module-card" data-ielts-module-card="1b">
+        <p class="badge">Module 1b</p><h3>Academic vs General Training</h3>
+        <p>Decide whether IELTS Academic or General Training matches your goals and strengths.</p>
+        <p class="module-status" data-ielts-status="1b"><span class="status-icon" data-ielts-status-icon="1b">⚪</span><span class="status-text"> Status: Not Started</span></p>
+        <a class="btn btn-primary" data-ielts-open="1b" href="classroom-ielts-module-academic-vs-general.html">Open Module 1b</a>
+      </article>
+      <article class="card module-card" data-ielts-module-card="2">
+        <p class="badge">Module 2</p><h3>Listening (Sections 1–4)</h3>
+        <p>Train signpost listening, distractor control, and note-taking strategies to capture correct answers under timed audio conditions.</p>
+        <p class="module-status" data-ielts-status="2"><span class="status-icon" data-ielts-status-icon="2">🔒</span><span class="status-text"> Status: Locked</span></p>
+        <a class="btn btn-primary" data-ielts-open="2" href="classroom-ielts-module-2.html">Open Module 2</a>
+      </article>
+      <article class="card module-card" data-ielts-module-card="3">
+        <p class="badge">Module 3</p><h3>Reading <span class="variant-tag">Academic + General</span></h3>
+        <p>Master skimming, scanning, keyword matching, and evidence-location strategies for both Academic and General text types.</p>
+        <p class="module-status" data-ielts-status="3"><span class="status-icon" data-ielts-status-icon="3">🔒</span><span class="status-text"> Status: Locked</span></p>
+        <a class="btn btn-primary" data-ielts-open="3" href="classroom-ielts-module-3.html">Open Module 3</a>
+      </article>
+      <article class="card module-card" data-ielts-module-card="4">
+        <p class="badge">Module 4</p><h3>Writing (Task 1 & Task 2) 🏅 <span class="variant-tag">Academic + General</span></h3>
+        <p>Apply structure templates, cohesion methods, and band-descriptor checks for Academic/General Task 1 and essay Task 2.</p>
+        <p class="module-status" data-ielts-status="4"><span class="status-icon" data-ielts-status-icon="4">🔒</span><span class="status-text"> Status: Locked</span></p>
+        <a class="btn btn-primary" data-ielts-open="4" href="classroom-ielts-module-4.html">Open Module 4</a>
+      </article>
+      <article class="card module-card" data-ielts-module-card="5">
+        <p class="badge">Module 5</p><h3>Speaking (Parts 1–3) 🏅</h3>
+        <p>Build fluent responses using idea-extension frameworks, pronunciation control, and coherence strategies for interview format.</p>
+        <p class="module-status" data-ielts-status="5"><span class="status-icon" data-ielts-status-icon="5">🔒</span><span class="status-text"> Status: Locked</span></p>
+        <a class="btn btn-primary" data-ielts-open="5" href="classroom-ielts-module-5.html">Open Module 5</a>
+      </article>
+      <article class="card module-card" data-ielts-module-card="6">
+        <p class="badge">Module 6</p><h3>Mock Exams</h3>
+        <p>Simulate full exam conditions, analyze errors by skill, and create targeted revision actions to raise your overall band.</p>
+        <p class="module-status" data-ielts-status="6"><span class="status-icon" data-ielts-status-icon="6">🔒</span><span class="status-text"> Status: Locked</span></p>
+        <a class="btn btn-primary" data-ielts-open="6" href="classroom-ielts-module-6.html">Open Module 6</a>
+      </article>
+    </section>
+  </div>
+</main>
+
+<footer class="site-footer"><div class="container footer-grid"><div><p><strong>IELTS Classroom</strong></p></div><div><p><a href="classroom.html">Choose Exam</a></p></div><div><p><a href="classroom-resource-center.html">Resource Center</a></p></div></div><p class="copyright-note">© 2026 Tolbert Innovation Hub. All rights reserved.</p></footer>
+<script src="classroom.js"></script>
+</body>
+</html>

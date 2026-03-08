@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Dashboard | Tolbert Innovation Hub</title>
+  <meta name="description" content="Personalized student dashboard for applications and status updates." />
+  <link rel="stylesheet" href="styles.css" />
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">Tolbert Innovation Hub</a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="scholarship.html">Scholarship Program</a><a href="fully-funded-scholarship.html">Fully Funded Scholarship</a>
+        <a href="healthcare.html">Healthcare Exposure</a>
+        <a href="software.html">Software Platform</a>
+        <a href="contact.html">Contact</a>
+      <a href="classroom.html">Classroom</a></nav>
+    </div>
+  </header>
+
+  <main id="main-content" class="section">
+    <div class="container">
+      <p class="section-label">Personal Dashboard</p>
+      <h1 class="page-title">Welcome, <span id="student-name">Student</span></h1>
+      <p class="section-intro">View your scholarship profile, submit applications, and upload supporting documents.</p>
+
+      <div class="cards two-up">
+        <article class="card">
+          <h3>Account Information</h3>
+          <p><strong>Email:</strong> <span id="student-email">-</span></p>
+          <p><strong>Phone:</strong> <span id="student-phone">-</span></p>
+          <p><strong>Program:</strong> <span id="student-program">-</span></p>
+        </article>
+        <article class="card">
+          <h3>Application Status</h3>
+          <ul class="list-tight" id="application-status-list" aria-live="polite"></ul>
+          <button id="logout-btn" class="btn btn-primary" type="button">Log Out</button>
+        </article>
+      </div>
+
+      <section class="section compact-section">
+        <article class="card">
+          <h3>Admission Letters</h3>
+          <p class="section-intro">When approved by an administrator, your admission letter will appear here.</p>
+          <div id="admission-letter-history" class="submission-history" aria-live="polite"></div>
+        </article>
+      </section>
+
+      <section class="section compact-section">
+        <article class="form-card">
+          <h2>Application Submission Portal</h2>
+          <p class="section-intro">Complete the form below and upload required documents (transcript, ID, certificates, statement, etc.).</p>
+
+          <form id="application-submission-form" class="form-card inner-form" novalidate>
+            <div class="form-grid">
+              <label>Application Type
+                <select name="applicationType" required>
+                  <option value="">Select</option>
+                  <option>Scholarship Application</option>
+                  <option>Healthcare Exposure Request</option>
+                  <option>Software Training Enrollment</option>
+                </select>
+              </label>
+              <label>Target Institution / Program
+                <input type="text" name="targetProgram" required placeholder="e.g., BSc Computer Science - India" />
+              </label>
+              <label class="full">Application Summary
+                <textarea name="summary" rows="4" required placeholder="Briefly explain your goals and why you are applying."></textarea>
+              </label>
+              <label class="full">Upload Supporting Documents
+                <input type="file" id="supporting-documents" name="documents" multiple required accept=".pdf,.doc,.docx,.jpg,.jpeg,.png" />
+              </label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit Application</button>
+            <p class="form-feedback" aria-live="polite"></p>
+          </form>
+        </article>
+      </section>
+
+      <section class="section compact-section">
+        <article class="card">
+          <h3>Submitted Applications & Documents</h3>
+          <p class="section-intro">Your recent submissions are listed below.</p>
+          <div id="submission-history" class="submission-history" aria-live="polite"></div>
+        </article>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-grid"><p><strong>Email:</strong> <a href="mailto:info@tolbertinnovationhub.org">info@tolbertinnovationhub.org</a></p><p><strong>Phone:</strong> <a href="tel:+231880559227">+231 880 559 227</a></p></div><p class="copyright-note">© 2026 Tolbert Innovation Hub. All rights reserved.</p></footer>
+  <script src="portal-auth.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

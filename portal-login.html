@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portal Access | Tolbert Innovation Hub</title>
+  <meta name="description" content="Secure portal access for Tolbert Innovation Hub scholarship applicants." />
+  <link rel="stylesheet" href="styles.css" />
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">Tolbert Innovation Hub</a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="scholarship.html">Scholarship Program</a><a href="fully-funded-scholarship.html">Fully Funded Scholarship</a>
+        <a href="healthcare.html">Healthcare Exposure</a>
+        <a href="software.html">Software Platform</a>
+        <a href="entertainment.html">Entertainment</a>
+        <a href="contact.html">Contact</a>
+      <a href="classroom.html">Classroom</a></nav>
+    </div>
+  </header>
+
+  <main id="main-content" class="section">
+    <div class="container portal-wrap">
+      <article class="form-card">
+        <p class="section-label">Portal</p>
+        <h1 class="page-title">Access Your Dashboard</h1>
+        <p class="section-intro">Access your scholarship profile, application status, and admission-letter updates.</p>
+
+        <form id="student-login-form" class="form-card inner-form" novalidate>
+          <label>Email Address
+            <input type="email" name="email" required autocomplete="email" />
+          </label>
+          <label>Password
+            <input type="password" name="password" required minlength="8" autocomplete="current-password" />
+          </label>
+          <button type="submit" class="btn btn-primary">Access Securely</button>
+          <p class="form-feedback" aria-live="polite"></p>
+        </form>
+
+        <p class="security-note">Security: credentials are validated client-side with hashed passwords and session-based access state for this demo portal.</p>
+
+        <p class="section-intro">New student? <a class="card-link" href="portal-register.html">Create your account</a>.</p>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-grid"><p><strong>Email:</strong> <a href="mailto:info@tolbertinnovationhub.org">info@tolbertinnovationhub.org</a></p><p><strong>Phone:</strong> <a href="tel:+231880559227">+231 880 559 227</a></p></div><p class="copyright-note">© 2026 Tolbert Innovation Hub. All rights reserved.</p></footer>
+  <script src="portal-auth.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

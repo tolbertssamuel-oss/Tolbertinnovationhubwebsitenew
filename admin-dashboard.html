@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Dashboard | Tolbert Innovation Hub</title>
+  <meta name="description" content="Back-end interface for reviewing student submissions and issuing admission letters." />
+  <link rel="stylesheet" href="styles.css" />
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">Tolbert Innovation Hub</a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="entertainment.html">Entertainment</a>
+        <a href="contact.html">Contact</a>
+      <a href="classroom.html">Classroom</a></nav>
+    </div>
+  </header>
+
+  <main id="main-content" class="section">
+    <div class="container">
+      <p class="section-label">Administrator Dashboard</p>
+      <h1 class="page-title">Welcome, <span id="admin-name">Admin</span></h1>
+      <p class="section-intro">Review all student applications, track statuses, and issue admission letters from one secure interface.</p>
+
+      <section class="cards three-up admin-summary-grid">
+        <article class="card stat-card">
+          <h3>Total Students</h3>
+          <p class="stat-number" id="total-students">0</p>
+        </article>
+        <article class="card stat-card">
+          <h3>Total Submissions</h3>
+          <p class="stat-number" id="total-submissions">0</p>
+        </article>
+        <article class="card stat-card">
+          <h3>Admission Letters Issued</h3>
+          <p class="stat-number" id="issued-letters">0</p>
+        </article>
+      </section>
+
+      <section class="section compact-section">
+        <article class="card">
+          <div class="admin-actions-row">
+            <h2>Student Submission Queue</h2>
+            <button type="button" class="btn btn-primary" id="admin-logout-btn">Log Out</button>
+          </div>
+          <p class="section-intro">Open each submission, update review status, and issue admission letters for qualified students.</p>
+          <div id="admin-submissions" class="cards"></div>
+        </article>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-grid"><p><strong>Email:</strong> <a href="mailto:info@tolbertinnovationhub.org">info@tolbertinnovationhub.org</a></p><p><strong>Phone:</strong> <a href="tel:+231880559227">+231 880 559 227</a></p></div><p class="copyright-note">© 2026 Tolbert Innovation Hub. All rights reserved.</p></footer>
+  <script src="portal-auth.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

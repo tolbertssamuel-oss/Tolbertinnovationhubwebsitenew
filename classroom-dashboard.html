@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Classroom Dashboard</title>
+  <meta name="description" content="Track IELTS and TOEFL study progress, scores, and activity summaries in the Tolbert Classroom dashboard."/>
+  <link rel="stylesheet" href="classroom.css"/>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="classroom.html"><img src="https://i.ibb.co/SXJKRq0S/Tolbert-Innovation-Logo.jpg" alt="Tolbert logo"/><span>Tolbert Classroom</span></a>
+    <nav class="nav-links" aria-label="Classroom navigation">
+      <a href="classroom.html">Classroom</a>
+      <a class="active" href="classroom-dashboard.html">Dashboard</a>
+      <a href="classroom-resource-center.html">Resource Center</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main-content" class="section">
+  <div class="container">
+    <h1 class="page-title">Dashboard</h1>
+    <p class="section-lead">Track learning progress, test results, writing submissions, and speaking practice in one place.</p>
+
+    <div class="grid-2 dashboard-snapshot-grid" aria-label="Dashboard snapshot">
+      <article class="card dashboard-stat-card">
+        <p class="badge">Overall Progress</p>
+        <h3 id="dashboard-overall-progress">0%</h3>
+        <p class="section-lead">Combined IELTS + TOEFL lesson completion.</p>
+      </article>
+      <article class="card dashboard-stat-card">
+        <p class="badge">Lessons Completed</p>
+        <h3 id="dashboard-total-lessons">0/24</h3>
+        <p class="section-lead">Total completed across both classrooms.</p>
+      </article>
+      <article class="card dashboard-stat-card">
+        <p class="badge">Practice Tests</p>
+        <h3 id="dashboard-tests-taken">0</h3>
+        <p class="section-lead">Reading and listening test attempts logged.</p>
+      </article>
+      <article class="card dashboard-stat-card">
+        <p class="badge">Learning Activity</p>
+        <h3 id="dashboard-activity-count">0</h3>
+        <p class="section-lead">Writing submissions + speaking recordings.</p>
+      </article>
+    </div>
+
+    <div class="grid-2 dashboard-grid">
+      <article class="card progress-wrap" data-progress-track="ielts">
+        <p class="badge">IELTS Path</p>
+        <h3>Course Progress</h3>
+        <div class="progress-bar"><div class="progress-fill"></div></div>
+        <p class="progress-label">0/12 lessons complete (0%)</p>
+        <div class="lesson-toolbar">
+          <a class="btn btn-primary next-lesson-link" href="classroom-lesson-ielts-orientation.html">Continue Learning</a>
+          <a class="btn btn-secondary" href="classroom-course-ielts.html">View Roadmap</a>
+        </div>
+      </article>
+
+      <article class="card progress-wrap" data-progress-track="toefl">
+        <p class="badge">TOEFL Path</p>
+        <h3>Course Progress</h3>
+        <div class="progress-bar"><div class="progress-fill"></div></div>
+        <p class="progress-label">0/12 lessons complete (0%)</p>
+        <div class="lesson-toolbar">
+          <a class="btn btn-primary next-lesson-link" href="classroom-lesson-toefl-orientation.html">Continue Learning</a>
+          <a class="btn btn-secondary" href="classroom-course-toefl.html">View Roadmap</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <p class="badge">Practice Performance</p>
+        <h3>Auto-Scored Results</h3>
+        <ul class="resource-list">
+          <li id="reading-score-status">Reading: No test submitted yet</li>
+          <li id="listening-score-status">Listening: No test submitted yet</li>
+        </ul>
+        <a class="btn btn-secondary" href="classroom-practice-tests.html">Take Practice Tests</a>
+      </article>
+
+      <article class="card">
+        <p class="badge">Submission Tracker</p>
+        <h3>Writing & Speaking Activity</h3>
+        <ul class="resource-list">
+          <li id="writing-submission-status">Writing submissions: 0</li>
+          <li id="speaking-recording-status">Speaking recordings: 0</li>
+        </ul>
+        <div class="lesson-toolbar">
+          <a class="btn btn-secondary" href="classroom-writing.html">Open Writing Section</a>
+          <a class="btn btn-secondary" href="classroom-speaking.html">Open Speaking Section</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <p class="badge">Quick Actions</p>
+        <h3>Continue Faster</h3>
+        <div class="lesson-toolbar">
+          <a class="btn btn-primary" href="classroom-ielts-home.html">Open IELTS Home</a>
+          <a class="btn btn-secondary" href="classroom-toefl-home.html">Open TOEFL Home</a>
+          <a class="btn btn-secondary" href="classroom-mastery-plan.html">Open Mastery Plan</a>
+          <a class="btn btn-secondary" href="classroom-resource-center.html">Open Resource Center</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <p class="badge">Daily Study Checklist</p>
+        <h3>Today’s Progress</h3>
+        <p class="section-lead">Check completed tasks to stay consistent. Your checklist is saved in this browser.</p>
+        <div class="form-stack" id="dashboard-daily-checklist">
+          <label><input type="checkbox" data-daily-task="reading"/> Complete 1 reading activity</label>
+          <label><input type="checkbox" data-daily-task="listening"/> Complete 1 listening activity</label>
+          <label><input type="checkbox" data-daily-task="writing"/> Submit 1 writing response</label>
+          <label><input type="checkbox" data-daily-task="speaking"/> Record 1 speaking attempt</label>
+        </div>
+        <p id="dashboard-checklist-status">0/4 tasks completed.</p>
+      </article>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer"><div class="container footer-grid"><div><p><strong>Dashboard</strong></p><p>LMS-style progression visibility.</p></div><div><p><a href="classroom-resource-center.html">Open Resource Center</a></p></div><div><p><a href="classroom-mastery-plan.html">Long-Term Mastery Plan</a></p></div></div><p class="copyright-note">© 2026 Tolbert Innovation Hub. All rights reserved.</p></footer>
+<script src="classroom.js"></script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Practice Tests | Classroom</title>
+  <meta name="description" content="Practice IELTS and TOEFL test formats with timed activities and saved performance feedback."/>
+  <link rel="stylesheet" href="classroom.css"/>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="classroom.html"><img src="https://i.ibb.co/SXJKRq0S/Tolbert-Innovation-Logo.jpg" alt="Tolbert logo"/><span>Tolbert Classroom</span></a>
+    <nav class="nav-links" aria-label="Classroom navigation">
+      <a href="classroom.html">Classroom</a>
+      <a href="classroom-dashboard.html">Dashboard</a>
+      <a href="classroom-resource-center.html">Resource Center</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main-content" class="section">
+  <div class="container">
+    <h1 class="page-title">Practice Tests</h1>
+    <p class="section-lead">Run timed mini-tests with automatic scoring for Reading and Listening.</p>
+
+    <article class="card">
+      <h2>Practice Timer</h2>
+      <p id="practice-timer-display" class="timer-display">30:00</p>
+      <div class="lesson-toolbar">
+        <button class="btn btn-secondary" id="practice-timer-start" type="button">Start</button>
+        <button class="btn btn-secondary" id="practice-timer-pause" type="button">Pause</button>
+        <button class="btn btn-primary" id="practice-timer-reset" type="button">Reset</button>
+      </div>
+    </article>
+
+    <div class="grid-2">
+      <article class="card">
+        <h2>Reading Auto-Score</h2>
+        <form id="reading-test-form" class="form-stack" data-score-type="reading">
+          <label>1) Main idea of paragraph A?
+            <select name="q1" data-correct="summary">
+              <option value="">Select</option><option value="detail">Detail</option><option value="summary">Summary</option><option value="opinion">Opinion</option>
+            </select>
+          </label>
+          <label>2) Best matching heading?
+            <select name="q2" data-correct="urban-planning">
+              <option value="">Select</option><option value="biology">Biology</option><option value="urban-planning">Urban Planning</option><option value="tourism">Tourism</option>
+            </select>
+          </label>
+          <label>3) Author attitude?
+            <select name="q3" data-correct="balanced">
+              <option value="">Select</option><option value="critical">Critical</option><option value="balanced">Balanced</option><option value="unclear">Unclear</option>
+            </select>
+          </label>
+          <button class="btn btn-primary" type="submit">Submit Reading Test</button>
+        </form>
+        <p id="reading-score-feedback" class="form-feedback"></p>
+      </article>
+
+      <article class="card">
+        <h2>Listening Auto-Score</h2>
+        <form id="listening-test-form" class="form-stack" data-score-type="listening">
+          <label>1) Departure time mentioned?
+            <select name="q1" data-correct="8-30">
+              <option value="">Select</option><option value="8-00">8:00</option><option value="8-30">8:30</option><option value="9-00">9:00</option>
+            </select>
+          </label>
+          <label>2) Correct location?
+            <select name="q2" data-correct="city-library">
+              <option value="">Select</option><option value="city-library">City Library</option><option value="sports-hall">Sports Hall</option><option value="science-lab">Science Lab</option>
+            </select>
+          </label>
+          <label>3) Required document?
+            <select name="q3" data-correct="student-id">
+              <option value="">Select</option><option value="passport">Passport</option><option value="student-id">Student ID</option><option value="ticket">Ticket</option>
+            </select>
+          </label>
+          <button class="btn btn-primary" type="submit">Submit Listening Test</button>
+        </form>
+        <p id="listening-score-feedback" class="form-feedback"></p>
+      </article>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer"><div class="container footer-grid"><div><p><strong>Practice Tests</strong></p><p>Timed drills + automatic score reporting.</p></div><div><p><a href="classroom-dashboard.html">View Dashboard Results</a></p></div><div><p><a href="classroom-resource-center.html">Study Resources</a></p></div></div><p class="copyright-note">© 2026 Tolbert Innovation Hub. All rights reserved.</p></footer>
+<script src="classroom.js"></script>
+</body>
+</html>

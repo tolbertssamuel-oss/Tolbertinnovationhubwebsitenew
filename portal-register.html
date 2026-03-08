@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Create Student Account | Tolbert Innovation Hub</title>
+  <meta name="description" content="Create a secure account to use the Tolbert Innovation Hub portal." />
+  <link rel="stylesheet" href="styles.css" />
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">Tolbert Innovation Hub</a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="scholarship.html">Scholarship Program</a><a href="fully-funded-scholarship.html">Fully Funded Scholarship</a>
+        <a href="healthcare.html">Healthcare Exposure</a>
+        <a href="software.html">Software Platform</a>
+        <a href="contact.html">Contact</a>
+      <a href="classroom.html">Classroom</a></nav>
+    </div>
+  </header>
+
+  <main id="main-content" class="section">
+    <div class="container portal-wrap">
+      <article class="form-card">
+        <p class="section-label">Portal</p>
+        <h1 class="page-title">Create Secure Student Account</h1>
+        <p class="section-intro">Register to track application progress and receive personalized scholarship updates.</p>
+
+        <form id="student-register-form" class="form-card inner-form" novalidate>
+          <div class="form-grid">
+            <label>Full Name
+              <input type="text" name="fullName" required autocomplete="name" />
+            </label>
+            <label>Email Address
+              <input type="email" name="email" required autocomplete="email" />
+            </label>
+            <label>Phone Number
+              <input type="tel" name="phone" required autocomplete="tel" />
+            </label>
+            <label>Preferred Program
+              <select name="program" required>
+                <option value="">Select</option>
+                <option>Scholarship Program</option>
+                <option>Healthcare Exposure Program</option>
+                <option>Software Development Program</option>
+              </select>
+            </label>
+            <label class="full">Password (minimum 8 characters)
+              <input type="password" name="password" required minlength="8" autocomplete="new-password" />
+            </label>
+          </div>
+          <button type="submit" class="btn btn-primary">Create Account</button>
+          <p class="form-feedback" aria-live="polite"></p>
+        </form>
+
+        <p class="security-note">Security: credentials are validated client-side with hashed passwords and session-based access state for this demo portal.</p>
+
+        <p class="section-intro">Already have an account? <a class="card-link" href="portal-login.html">Sign in here</a>.</p>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-grid"><p><strong>Email:</strong> <a href="mailto:info@tolbertinnovationhub.org">info@tolbertinnovationhub.org</a></p><p><strong>Phone:</strong> <a href="tel:+231880559227">+231 880 559 227</a></p></div><p class="copyright-note">© 2026 Tolbert Innovation Hub. All rights reserved.</p></footer>
+  <script src="portal-auth.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
